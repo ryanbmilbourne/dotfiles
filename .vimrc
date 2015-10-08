@@ -53,9 +53,6 @@ execute pathogen#infect()
 let g:syntastic_javascript_checkers = ['eslint']
 let g:vim_markdown_folding_disabled=1
 
-set background=dark
-colorscheme slate
-
 " Key mappings here!
 " Escape is for suckers.
 imap jk <Esc>
