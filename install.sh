@@ -14,26 +14,26 @@ files=".tclshrc .tmux.conf .vimrc .vim"
 
 echo "Install dotfiles"
 
-echo "Create backup directory ( $oldBusted )..."
+printf "Create backup directory($oldBusted)"
 mkdir -p $oldBusted
 echo "...done"
 
-echo "Change directory to $newHotness ..."
+printf "Change directory to $newHotness ..."
 cd $newHotness
 echo "...done"
 
 echo "Create Symlinks..."
 for file in $files; do
-    echo "===== Processing $file ====="
-    echo "Move exiting $file from ~/ to $oldBusted ..."
+    echo "=== $file ==="
+    printf "\tMove existing $file from ~/ to $oldBusted"
     mv ~/$file $oldBusted
     echo "...done"
-    echo "Create symlink to $newHotness/$file in ~/ ..."
+    printf "\tCreate symlink to $newHotness/$file in ~/"
     ln -s $newHotness/$file ~/$file
-    echo "===== Processed $file\n====="
+    echo "...done"
 done
 
-echo "Install Git Submodules..."
+echo "Install Git Submodules"
 cd $newHotness
 git submodule update --init --recursive
 if [ "$?" -ne 0 ]; then
