@@ -1,3 +1,10 @@
+set background=dark
+if has("gui_running")
+    colorscheme solarized
+else
+    colorscheme slate
+endif
+
 " Better command-line completion
 set wildmenu
 
