@@ -1,4 +1,4 @@
 # disabled files
 bundle-disabled
 # history
-.netrwhist
+.vim/.netrwhist
