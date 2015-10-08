@@ -1,0 +1,8 @@
+##
+# @file .tclshrc
+
+if {$tcl_interactive} {
+    package require Tclx
+    package require tclreadline
+    ::tclreadline::Loop
+}
