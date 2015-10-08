@@ -1,3 +1,7 @@
+v0.2.0 - 8 October 2015
+* Fixes to install script
+* Docs: Update README
+
 v0.1.0 - 8 October 2015
 
 * Add .tclshrc

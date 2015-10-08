@@ -18,17 +18,13 @@ printf "Create backup directory($oldBusted)"
 mkdir -p $oldBusted
 echo "...done"
 
-printf "Change directory to $newHotness ..."
-cd $newHotness
-echo "...done"
-
 echo "Create Symlinks..."
 for file in $files; do
-    echo "=== $file ==="
-    printf "\tMove existing $file from ~/ to $oldBusted"
-    mv ~/$file $oldBusted
+    echo "$file"
+    printf "  Move existing $file from ~/ to $oldBusted"
+    mv ~/$file $oldBusted 2>/dev/null
     echo "...done"
-    printf "\tCreate symlink to $newHotness/$file in ~/"
+    printf "  Create symlink to $newHotness/$file in ~/"
     ln -s $newHotness/$file ~/$file
     echo "...done"
 done
