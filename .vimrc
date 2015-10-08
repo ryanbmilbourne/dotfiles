@@ -50,7 +50,12 @@ syntax enable
 
 " For syntastic
 execute pathogen#infect()
+
+" Default to eslint for javascript syntax checking.
+" BE SURE TO npm install -g eslint
 let g:syntastic_javascript_checkers = ['eslint']
+
+" For vim-markdown
 let g:vim_markdown_folding_disabled=1
 
 " Key mappings here!
