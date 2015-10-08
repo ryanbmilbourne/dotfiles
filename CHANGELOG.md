@@ -1,3 +1,7 @@
+v0.2.1 - 8 October 2015
+* Fix issue with symlinks when using install script when user had already used
+it on their dot files.
+
 v0.2.0 - 8 October 2015
 * Fixes to install script
 * Docs: Update README
