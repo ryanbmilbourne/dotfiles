@@ -1,3 +1,7 @@
+v0.3.0 - 9 October 2015
+* Add `vim-fugitive` module
+* Add powerline fonts as submodule
+
 v0.2.1 - 8 October 2015
 * Fix issue with symlinks when using install script when user had already used
 it on their dot files.

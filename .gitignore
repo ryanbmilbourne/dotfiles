@@ -2,3 +2,5 @@
 bundle-disabled
 # history
 .vim/.netrwhist
+# powerline fonts will be here after installation
+.fonts

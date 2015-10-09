@@ -5,6 +5,9 @@ else
     colorscheme slate
 endif
 
+" For vim-airline
+let g:airline_powerline_fonts = 1
+
 " Better command-line completion
 set wildmenu
 
