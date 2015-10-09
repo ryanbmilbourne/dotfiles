@@ -1,3 +1,6 @@
+v0.4.0 - 9 October 2015
+* Add .gitconfig (no passwords/keys)
+
 v0.3.0 - 9 October 2015
 * Add `vim-fugitive` module
 * Add powerline fonts as submodule

@@ -10,11 +10,14 @@ newHotness=~/dotfiles
 oldBusted=~/dotfiles_old
 
 # Files to be sym-linked
-files=".tclshrc .tmux.conf .vimrc .vim"
+files=".tclshrc .tmux.conf .vimrc .vim .gitconfig"
 
 echo "Install dotfiles"
 
 
+#############################
+# Do backup, make symlinks
+#############################
 printf "Create backup directory($oldBusted)..."
 mkdir -p $oldBusted
 echo "done"
@@ -38,6 +41,9 @@ for file in $files; do
 done
 
 
+#############################
+# Install Git submodules
+#############################
 echo "Install Git Submodules"
 cd $newHotness
 git submodule update --init --recursive
@@ -46,15 +52,23 @@ if [ "$?" -ne 0 ]; then
 fi
 echo "done"
 
+#############################
+# Additional Submodule config here
+#############################
 
+# vim-fugitive
+printf "Configure vim-fugitive help tags..."
+vim -u NONE -c "helptags vim-fugitive/doc" -c q
+echo "done"
+
+# vim-airline fonts
 echo "Install Powerline fonts (for use with vim-airline)"
-printf "Move old ~/.fonts..."
+printf "  Move old ~/.fonts..."
 mv ~/.fonts $oldBusted 2>/dev/null
 echo "done"
 
-printf "Running powerline-fonts install script..."
+printf "  Running powerline-fonts install script..."
 cd $newHotness/powerline-fonts
-# installer to create new ~/.fonts directory
 ./install.sh
 echo "done"
 

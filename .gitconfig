@@ -1,0 +1,10 @@
+[user]
+        name = Ryan Milbourne
+        email = ryan.milbourne@viasat.com
+[core]
+        editor = vim
+[diff]
+        tool = vimdiff
+[merge]
+        tool = vimdiff
+
