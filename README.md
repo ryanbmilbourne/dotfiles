@@ -10,7 +10,7 @@ so you do not have to worry about losing any existing settings.
 
 ```bash
 cd ~/
-git clone https://git.viasat.com/rmilbourne/dotfiles.git
+git clone git@git.viasat.com:rmilbourne/dotfiles.git
 cd dotfiles
 ./install.sh
 ```
@@ -28,8 +28,6 @@ installed globally:
 npm install -g eslint
 ```
 
-
-## References
 [0]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 [1]: https://github.com/scrooloose/syntastic
 [2]: http://eslint.org/ 
