@@ -50,8 +50,9 @@ set foldmethod=syntax
 filetype plugin indent on
 syntax enable
 
-" Vim treats JSON as JS by default
+" JSON files
 au BufRead,BufNewFile *.json set filetype=json
+let g:vim_json_syntax_conceal = 0
 
 " For syntastic
 execute pathogen#infect()
