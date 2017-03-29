@@ -10,7 +10,7 @@ so you do not have to worry about losing any existing settings.
 
 ```bash
 cd ~/
-git clone git@git.viasat.com:rmilbourne/dotfiles.git
+git clone git@github.com:ryanbmilbourne/dotfiles.git
 cd dotfiles
 ./install.sh
 ```
