@@ -28,6 +28,14 @@ installed globally:
 npm install -g eslint
 ```
 
+### Jsonlint
+
+Same deal, but with jsonlint:
+
+```bash
+npm install -g jsonlint
+```
+
 [0]: https://git-scm.com/book/en/v2/Git-Tools-Submodules
 [1]: https://github.com/scrooloose/syntastic
 [2]: http://eslint.org/ 
